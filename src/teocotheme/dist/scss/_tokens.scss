@@ -1,0 +1,91 @@
+// Compatible with @progress/kendo-theme-default v.5.8.0
+
+
+$tb-kendo-border-radius: 10px;
+$tb-dark-theme: false;
+$tb-primary: #136ADD;
+$tb-secondary: #666666;
+$tb-info: #0058e9;
+$tb-success: #37b400;
+$tb-warning: #ffc000;
+$tb-error: #f31700;
+$tb-body-bg: #ffffff;
+$tb-body-text: #313131;
+$tb-heading-text: #292929;
+$tb-subtle-text: #666666;
+$tb-disabled-text: #8f8f8f;
+$tb-component-bg: $tb-body-bg;
+$tb-component-text: $tb-body-text;
+$tb-base-bg: #fafafa;
+$tb-base-text: $tb-body-text;
+$tb-hovered-bg: #0F4B9A;
+$tb-hovered-text: #ffffff;
+$tb-selected-bg: #0F4B9A;
+$tb-selected-text: #ffffff;
+$tb-kendo-button-bg: #f5f5f5;
+$tb-kendo-button-text: #424242;
+$tb-link-text: $tb-primary;
+$tb-link-hover-text: #d6534a;
+$tb-series-a: #ff6358;
+$tb-series-b: #ffd246;
+$tb-series-c: #78d237;
+$tb-series-d: #28b4c8;
+$tb-series-e: #2d73f5;
+$tb-series-f: #aa46be;
+
+$kendo-border-radius: $tb-kendo-border-radius;
+$dark-theme: $tb-dark-theme;
+$primary: $tb-primary;
+$secondary: $tb-secondary;
+$info: $tb-info;
+$success: $tb-success;
+$warning: $tb-warning;
+$error: $tb-error;
+$body-bg: $tb-body-bg;
+$body-text: $tb-body-text;
+$heading-text: $tb-heading-text;
+$subtle-text: $tb-subtle-text;
+$disabled-text: $tb-disabled-text;
+$component-bg: $tb-component-bg;
+$component-text: $tb-component-text;
+$base-bg: $tb-base-bg;
+$base-text: $tb-base-text;
+$hovered-bg: $tb-hovered-bg;
+$hovered-text: $tb-hovered-text;
+$selected-bg: $tb-selected-bg;
+$selected-text: $tb-selected-text;
+$kendo-button-bg: $tb-kendo-button-bg;
+$kendo-button-text: $tb-kendo-button-text;
+$link-text: $tb-link-text;
+$link-hover-text: $tb-link-hover-text;
+$series-a: $tb-series-a;
+$series-b: $tb-series-b;
+$series-c: $tb-series-c;
+$series-d: $tb-series-d;
+$series-e: $tb-series-e;
+$series-f: $tb-series-f;
+$font-family: inherit;
+$font-size: 14px;
+$font-weight-normal: 400;
+$line-height: 1.4285714286;
+
+$enable-gradients: true;
+
+$tb-typography: (
+  default-typography: (
+      font-family: 'inherit',
+      font-size: 14px,
+      font-weight: 400,
+      line-height: 1.4285714286,
+  ),
+);
+
+@mixin typography-classes ($typography) {
+  @each $selector, $property in $typography {
+    &-#{$selector} {
+      @each $propName, $propValue in $property {
+        #{$propName}: $propValue;
+      }
+    }
+  }
+}
