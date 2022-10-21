@@ -1,6 +1,19 @@
 @import '~teocoTheme/dist/scss';
 
+
+body { 
+    // background-color: $tb-primary;
+    margin:10vh;
+}
+
 .box {
-    margin-top:20px;
-    border-top: 20px solid $primary;
+    margin-top:40px;
+    border: 1px solid $tb-primary;
+    border-top: 5px solid $tb-primary;
+    padding: 20px;
+}
+
+.box p {
+    color: $tb-primary;
+    font-weight: bold;
 }

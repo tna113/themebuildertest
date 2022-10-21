@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { ButtonModule } from '@progress/kendo-angular-buttons';
+import { ButtonsModule } from '@progress/kendo-angular-buttons';
 import { TreeModule } from './_components/tree/tree.module';
 
 @NgModule({
@@ -17,7 +17,7 @@ import { TreeModule } from './_components/tree/tree.module';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    ButtonModule,
+    ButtonsModule,
     TreeModule
   ],
   providers: [],

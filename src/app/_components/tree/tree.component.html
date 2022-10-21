@@ -1,15 +1,10 @@
 <div class="box">
-    botton <br>
-    <button kendoButton (click)="click()">kendo button</button>
-</div>
-
-<div class="box">
-    treeview <br>
+    <p>treeView</p><br>
     <kendo-treeview [nodes]="data" textField="text" kendoTreeViewHierarchyBinding childrenField="items" [filterable]="true" kendoTreeViewExpandable [expandedKeys]="expandedKeys"></kendo-treeview>
 </div>
 
 <div class="box">
-    dialog box <br>
+    <p>dialog box</p><br>
     <button kendoButton *ngIf="!opened" (click)="open()">Open dialog</button>
     <kendo-dialog title="please confirm" *ngIf="opened" (close)="close('cancel')" [minWidth]="250" [width]="450">
         <p>are you sure you want to continue?</p>
@@ -21,7 +16,12 @@
 </div>
 
 <div class="box">
-    checkbox <br>
+    <p>kendoButton</p><br>
+    <button kendoButton (click)="click()">kendo button</button>
+</div>
+
+<div class="box">
+    <p>kendoCheckbox</p><br>
     &nbsp; <input type="checkbox" #notification kendoCheckBox>
     &nbsp; <input type="checkbox" #notification kendoCheckBox>
     &nbsp; <input type="checkbox" #notification kendoCheckBox>
