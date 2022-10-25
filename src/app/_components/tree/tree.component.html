@@ -5,19 +5,59 @@
 
 <div class="box">
     <p>dialog box</p><br>
-    <button kendoButton *ngIf="!opened" (click)="open()">Open dialog</button>
+    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md" *ngIf="!opened" (click)="open()">Open dialog</button>
     <kendo-dialog title="please confirm" *ngIf="opened" (close)="close('cancel')" [minWidth]="250" [width]="450">
         <p>are you sure you want to continue?</p>
         <kendo-dialog-actions>
-            <button kendoButton (click)="close('no')">no</button>
-            <button kendoButton (click)="close('yes')" themeColor="primary">yes</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md" (click)="close('no')">no</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md" (click)="close('yes')" themeColor="primary">yes</button>
         </kendo-dialog-actions>
     </kendo-dialog>
 </div>
 
 <div class="box">
-    <p>kendoButton</p><br>
-    <button kendoButton (click)="click()">kendo button</button>
+    <p>kendo button group</p>
+    <div class="k-button-group" role="group">
+        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-group-start">
+            <span class="k-button-text">first</span>
+        </button>
+        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-group-start">
+            <span class="k-button-text">second</span>
+        </button>
+        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-group-start">
+            <span class="k-button-text">third</span>
+        </button>
+    </div>
+</div>
+
+<div class="box">
+    <p>kendoButton</p>
+    <div  style="display:flex; flex-direction:row; justify-content: space-evenly;">
+        <div class="box">
+            <p>k-button</p><br>
+            <button (click)="click()" class="k-button">kendo button</button>
+        </div>
+
+        <div class="box">
+            <p>+k-button-md</p><br>
+            <button (click)="click()" class="k-button k-button-md">kendo button</button>
+        </div>
+
+        <div class="box">
+            <p>+k-button-solid</p><br>
+            <button (click)="click()" class="k-button k-button-md k-button-solid">kendo button</button>
+        </div>
+
+        <div class="box">
+            <p>+k-button-solid-base</p><br>
+            <button (click)="click()" class="k-button k-button-md k-button-solid k-button-solid-base">kendo button</button>
+        </div>
+
+        <div class="box">
+            <p>+k-rounded-md</p><br>
+            <button (click)="click()" class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">kendo button</button>
+        </div>
+    </div>
 </div>
 
 <div class="box">
