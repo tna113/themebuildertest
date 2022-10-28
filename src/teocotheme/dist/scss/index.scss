@@ -1,7 +1,17 @@
 // Compatible with @progress/kendo-theme-default v.5.8.0
 
+//doesn't override import $tb-primary
+// $tb-primary:green;
+
 @import 'tokens';
 
 @import '~@progress/kendo-theme-default/dist/all';
 
 @import 'overrides';
+
+//overrides $tb-primary
+// $tb-primary: green;
+
+// button {
+//     border-radius: 10px;
+// }
